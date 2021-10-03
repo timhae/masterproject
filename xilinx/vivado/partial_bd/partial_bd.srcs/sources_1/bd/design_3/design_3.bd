@@ -1,0 +1,143 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../partial_bd.gen/sources_1/bd/design_3",
+      "name": "design_3",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1"
+    },
+    "design_tree": {
+      "bitwise_or_0": ""
+    },
+    "interface_ports": {
+      "img_in1_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "1"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "img_in2_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "1"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "img_out_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      }
+    },
+    "ports": {
+      "ap_clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "ap_rst_n_0": {
+        "type": "rst",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "bitwise_or_0": {
+        "vlnv": "hls:accel:bitwise_or:1.0",
+        "xci_name": "design_3_bitwise_or_0_0",
+        "xci_path": "ip/design_3_bitwise_or_0_0/design_3_bitwise_or_0_0.xci",
+        "inst_hier_path": "bitwise_or_0"
+      }
+    },
+    "interface_nets": {
+      "bitwise_or_0_img_out": {
+        "interface_ports": [
+          "img_out_0",
+          "bitwise_or_0/img_out"
+        ]
+      },
+      "img_in1_0_1": {
+        "interface_ports": [
+          "img_in1_0",
+          "bitwise_or_0/img_in1"
+        ]
+      },
+      "img_in2_0_1": {
+        "interface_ports": [
+          "img_in2_0",
+          "bitwise_or_0/img_in2"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk_0",
+          "bitwise_or_0/ap_clk"
+        ]
+      },
+      "ap_rst_n_0_1": {
+        "ports": [
+          "ap_rst_n_0",
+          "bitwise_or_0/ap_rst_n"
+        ]
+      }
+    }
+  }
+}

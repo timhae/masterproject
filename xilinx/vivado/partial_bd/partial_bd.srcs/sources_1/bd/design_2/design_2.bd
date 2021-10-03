@@ -1,0 +1,108 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../partial_bd.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1"
+    },
+    "design_tree": {
+      "gauss_0": ""
+    },
+    "interface_ports": {
+      "img_in1": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "1"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "img_out": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "ap_rst_n": {
+        "type": "rst",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "gauss_0": {
+        "vlnv": "hls:accel:gauss:1.0",
+        "xci_name": "design_2_gauss_0_0",
+        "xci_path": "ip/design_2_gauss_0_0/design_2_gauss_0_0.xci",
+        "inst_hier_path": "gauss_0"
+      }
+    },
+    "interface_nets": {
+      "gauss_0_img_out": {
+        "interface_ports": [
+          "img_out",
+          "gauss_0/img_out"
+        ]
+      },
+      "img_in1_1": {
+        "interface_ports": [
+          "img_in1",
+          "gauss_0/img_in1"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_1": {
+        "ports": [
+          "ap_clk",
+          "gauss_0/ap_clk"
+        ]
+      },
+      "ap_rst_n_1": {
+        "ports": [
+          "ap_rst_n",
+          "gauss_0/ap_rst_n"
+        ]
+      }
+    }
+  }
+}
